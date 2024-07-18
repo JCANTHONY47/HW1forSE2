@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class Question3 extends StatelessWidget {
   // This widget is the root of your application.
@@ -40,8 +41,17 @@ class Question3 extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: <Widget>[
-
-                        // ADD FB ICONS HERE
+                        FaIcon(
+                          FontAwesomeIcons.facebook,
+                          size: 40,
+                          color: Colors.blue,
+                        ),
+                        FaIcon(
+                          FontAwesomeIcons.facebookF,
+                          size: 40,
+                          color: Colors.blue,
+                        )
+                        // FB ICONS HERE
 
 
                       ],
@@ -50,16 +60,33 @@ class Question3 extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: <Widget>[
-                        
-                        // ADD REDDIT ICONS HERE
+                        FaIcon(
+                          FontAwesomeIcons.reddit,
+                          size: 40,
+                          color: Colors.orange,
+                        ),
+                        FaIcon(
+                          FontAwesomeIcons.redditAlien,
+                          size: 40,
+                          color: Colors.orange,
+                        ),
+                        // REDDIT ICONS HERE
 
                       ],
                     ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: <Widget>[
-                        
-
+                        FaIcon(
+                          FontAwesomeIcons.snapchat,
+                          size: 40,
+                          color: Colors.yellow,
+                        ),
+                        FaIcon(
+                          FontAwesomeIcons.squareSnapchat,
+                          size: 40,
+                          color: Colors.yellow,
+                        ),
                         // ADD SNAP ICONS HERE
 
                       ],

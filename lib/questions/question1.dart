@@ -16,9 +16,13 @@ class Question1 extends StatelessWidget {
                 Navigator.pop(context);
               },
             ),
-            title: Text('App Bar'),
+            title: Text('This is my Title'),
             actions: <Widget>[
-              // ADD ICON HERE
+            IconButton(
+              icon: Icon(Icons.search),
+              onPressed: () {
+              },
+            ),
             ],
           ),
           body: Center(

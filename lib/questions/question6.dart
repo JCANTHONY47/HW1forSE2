@@ -21,7 +21,7 @@ class Question6 extends StatelessWidget {
           body: Center(
 
             // ADD IMAGE AS A CHILD OF CENTER
-            child: null,
+            child: Image.network('https://assets-prd.ignimgs.com/2020/09/16/mandalorian-button-1600277980032.jpg'),
           )),
           
     );

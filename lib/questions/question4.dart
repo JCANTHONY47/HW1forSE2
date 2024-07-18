@@ -32,21 +32,32 @@ class Question4 extends StatelessWidget {
               child: Column(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: <Widget>[
-                    // ADD ICON BUTTON HERE
-
-
-
-                    
-                    // ADD RAISED BUTTON HERE
-
-
-
-
-                    // ADD FLAT BUTTON HERE
-
-
-
-
+                                      
+                  // ADD ICON BUTTON HERE
+                  IconButton(
+                    icon: Icon(Icons.thumb_up),
+                    iconSize: 40,
+                    color: Colors.blue,
+                    onPressed: () {
+                  
+                    },
+                  ),
+                  
+                  // ADD ELEVATED BUTTON HERE
+                  ElevatedButton(
+                    onPressed: () {
+                  
+                    },
+                    child: Text('Raised Button'),
+                  ),
+                  
+                  // ADD TEXT BUTTON HERE
+                  TextButton(
+                    onPressed: () {
+                  
+                    },
+                    child: Text('Flat Button'),
+                  ),
                   ]),
             ),
           )),
