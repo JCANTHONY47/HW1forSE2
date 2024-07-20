@@ -17,6 +17,8 @@ class Question1 extends StatelessWidget {
               },
             ),
             title: Text('This is my Title'),
+            centerTitle: true,
+            
             actions: <Widget>[
             IconButton(
               icon: Icon(Icons.search),

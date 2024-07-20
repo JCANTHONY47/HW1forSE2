@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+
 
 class Question3 extends StatelessWidget {
   // This widget is the root of your application.
@@ -18,6 +18,7 @@ class Question3 extends StatelessWidget {
               },
             ),
             title: Text('Icons'),
+            centerTitle: true,
           ),
           body: Center(
             child: Padding(
@@ -41,13 +42,13 @@ class Question3 extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: <Widget>[
-                        FaIcon(
-                          FontAwesomeIcons.facebook,
+                        Icon(
+                          Icons.thumb_down,
                           size: 40,
-                          color: Colors.blue,
+                          color: Colors.grey,
                         ),
-                        FaIcon(
-                          FontAwesomeIcons.facebookF,
+                        Icon(
+                          Icons.thumb_up,
                           size: 40,
                           color: Colors.blue,
                         )
@@ -60,15 +61,15 @@ class Question3 extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: <Widget>[
-                        FaIcon(
-                          FontAwesomeIcons.reddit,
+                        Icon(
+                          Icons.arrow_downward,
                           size: 40,
-                          color: Colors.orange,
+                          color: Colors.purple,
                         ),
-                        FaIcon(
-                          FontAwesomeIcons.redditAlien,
+                        Icon(
+                          Icons.arrow_upward,
                           size: 40,
-                          color: Colors.orange,
+                          color: Colors.deepOrange,
                         ),
                         // REDDIT ICONS HERE
 
@@ -77,15 +78,15 @@ class Question3 extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: <Widget>[
-                        FaIcon(
-                          FontAwesomeIcons.snapchat,
+                        Icon(
+                          Icons.send,
                           size: 40,
-                          color: Colors.yellow,
+                          color: Colors.red,
                         ),
-                        FaIcon(
-                          FontAwesomeIcons.squareSnapchat,
+                        Icon(
+                          Icons.mode_comment,
                           size: 40,
-                          color: Colors.yellow,
+                          color: Colors.blue,
                         ),
                         // ADD SNAP ICONS HERE
 

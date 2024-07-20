@@ -17,6 +17,7 @@ class Question2 extends StatelessWidget {
               },
             ),
             title: Text('Homework 1'),
+            centerTitle: true,
           ),
           body: Center(
             child: Padding(

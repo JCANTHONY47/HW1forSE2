@@ -1,7 +1,16 @@
 import 'package:flutter/material.dart';
 
-class Question5 extends StatelessWidget {
-  // This widget is the root of your application.
+class Question5 extends StatefulWidget {
+  @override
+  _Question5State createState() => _Question5State();
+}
+
+class _Question5State extends State<Question5> {
+  bool _firstSwitchValue = true;
+  bool _secondSwitchValue = false;
+  bool _firstCheckboxValue = true;
+  bool _secondCheckboxValue = false;
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -17,6 +26,7 @@ class Question5 extends StatelessWidget {
               },
             ),
             title: Text('Inputs'),
+            centerTitle: true,
           ),
           body: Center(
             child: Padding(
@@ -36,47 +46,47 @@ class Question5 extends StatelessWidget {
                       children: <Widget>[
                         // ADD CHECKBOXES WITH A VALUE OF TRUE (checked)
                         Checkbox(
-                          value: true,
+                          value: _firstCheckboxValue,
                           onChanged: (bool newValue) {
+                            setState(() {
+                              _firstCheckboxValue = newValue;
+                            });
                           },
                         ),
 
                         // ADD CHECKBOXES WITH A VALUE OF FALSE (unchecked)
                         Checkbox(
-                          value: false,
+                          value: _secondCheckboxValue,
                           onChanged: (bool newValue) {
-                            // Handle checkbox change
+                            setState(() {
+                              _secondCheckboxValue = newValue;
+                            });
                           },
                         ),
-              
                       ],
                     ),
-
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
-
-
                         // ADD SWITCH WITH A VALUE OF TRUE (on)
-                                                Switch(
-                          value: true,
+                        Switch(
+                          value: _firstSwitchValue,
                           onChanged: (bool newValue) {
-                            // Handle switch change
+                            setState(() {
+                              _firstSwitchValue = newValue;
+                            });
                           },
                         ),
 
                         // ADD SWITCH WITH A VALUE OF FALSE (off)
-                                                Switch(
-                          value: false,
+                        Switch(
+                          value: _secondSwitchValue,
                           onChanged: (bool newValue) {
-                            // Handle switch change
+                            setState(() {
+                              _secondSwitchValue = newValue;
+                            });
                           },
                         ),
-                     
-
-
-
-
                       ],
                     )
                   ]),

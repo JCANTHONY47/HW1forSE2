@@ -17,6 +17,7 @@ class Question6 extends StatelessWidget {
               },
             ),
             title: Text('Images'),
+            centerTitle: true,
           ),
           body: Center(
 

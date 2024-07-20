@@ -17,6 +17,7 @@ class Question4 extends StatelessWidget {
               },
             ),
             title: Text('Buttons'),
+            centerTitle: true,
           ),
 
           // Floating Action button is a child of the Scaffold
@@ -35,7 +36,7 @@ class Question4 extends StatelessWidget {
                                       
                   // ADD ICON BUTTON HERE
                   IconButton(
-                    icon: Icon(Icons.thumb_up),
+                    icon: Icon(Icons.bluetooth),
                     iconSize: 40,
                     color: Colors.blue,
                     onPressed: () {
@@ -43,25 +44,29 @@ class Question4 extends StatelessWidget {
                     },
                   ),
                   
-                  // ADD ELEVATED BUTTON HERE
-                  ElevatedButton(
-                    onPressed: () {
-                  
-                    },
-                    child: Text('Raised Button'),
+                // ADD ELEVATED BUTTON HERE
+                ElevatedButton(
+                  onPressed: () {},
+                  style: ElevatedButton.styleFrom(
+                    primary: Colors.grey.shade300, 
+                    onPrimary: Colors.black, 
                   ),
-                  
-                  // ADD TEXT BUTTON HERE
-                  TextButton(
-                    onPressed: () {
-                  
-                    },
-                    child: Text('Flat Button'),
+                  child: Text('Raised Button'),
+                ),
+
+                // ADD TEXT BUTTON HERE
+                TextButton(
+                  onPressed: () {},
+                  style: TextButton.styleFrom(
+                    primary: Colors.black, 
                   ),
-                  ]),
+                  child: Text('Flat Button'),
+                ),
+              ],
             ),
-          )),
-          
+          ),
+        ),
+      ),
     );
   }
 }
